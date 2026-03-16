@@ -38,14 +38,14 @@ graph:
     - id: Programmer Code Review
       type: agent
       config:
-        name: gpt-4o
+        name: ${MODEL_NAME}
         role: |-
           ${COMMON_PROMPT}
           You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
           You can write/create computer software or applications by providing a specific programming language to the computer. You have extensive computing and coding experience in many varieties of programming languages and platforms, such as Python, Java, C, C++, HTML, CSS, JavaScript, XML, SQL, PHP, etc,.
           You will receive the task from user.
           To complete the task, you must call the functions to save or edit the codes that appropriately solves the requested instruction based on your expertise and customer's needs.
-        provider: openai
+        provider: ${PROVIDER}
         base_url: ${BASE_URL}
         api_key: ${API_KEY}
         params: {}
@@ -71,14 +71,14 @@ graph:
     - id: Programmer Test Modification
       type: agent
       config:
-        name: gpt-4o
+        name: ${MODEL_NAME}
         role: |-
           ${COMMON_PROMPT}
           You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
           You can write/create computer software or applications by providing a specific programming language to the computer. You have extensive computing and coding experience in many varieties of programming languages and platforms, such as Python, Java, C, C++, HTML, CSS, JavaScript, XML, SQL, PHP, etc,.
           You will receive the task from user.
           To complete the task, you must call the functions to save or edit the codes that appropriately solves the requested instruction based on your expertise and customer's needs.
-        provider: openai
+        provider: ${PROVIDER}
         base_url: ${BASE_URL}
         api_key: ${API_KEY}
         params: {}
@@ -104,8 +104,8 @@ graph:
     - id: Chief Executive Officer
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Chief Executive Officer. Now, we are both working at ChatDev and we share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -166,8 +166,8 @@ graph:
     - id: Programmer Code Complete
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -214,8 +214,8 @@ graph:
     - id: Programmer Coding
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -265,8 +265,8 @@ graph:
     - id: Chief Product Officer
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Chief Product Officer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -323,8 +323,8 @@ graph:
     - id: Programmer Test Error Summary
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -360,8 +360,8 @@ graph:
     - id: Code Reviewer
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Code Reviewer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
@@ -458,8 +458,8 @@ graph:
     - id: Software Test Engineer
       type: agent
       config:
-        name: gpt-4o
-        provider: openai
+        name: ${MODEL_NAME}
+        provider: ${PROVIDER}
         role: |-
           ${COMMON_PROMPT}
           You are Software Test Engineer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.
