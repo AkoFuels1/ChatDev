@@ -20,7 +20,6 @@ services:
       dockerfile: Dockerfile
       target: dev
     container_name: chatdev_frontend
-    volumes:
     ports:
       - "${FRONTEND_PORT:-5173}:5173"
     env_file:
