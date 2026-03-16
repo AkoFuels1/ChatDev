@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
     plugins: [vue()],
     server: {
       host: true,
+      allowedHosts: true,
       proxy: {
         '/api': {
           target: target,
